@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">멋쟁이 사자처럼 첫 번째 중앙과제 - 경희대학교 박태호</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">--Currently on WORK--</a>
+                </li>
+        </div>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+
+    <div class="main" style="height:100%; width:100%; display: table; text-align: center;">
+        <div class="container" style="display: table-cell; vertical-align:middle;">
+            <h1><b>멋쟁이 사자처럼 7기</h1></b><br>
+            <h3>사자 <u>박태호</u>입니다.</h3><br>
+            <button type="button" class="btn btn-outline-success, animated bounceIn slower">어흥~</button><br><br>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                사자의 개인정보 </button><br><br>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter2"
+                style="margin-right:2em">
+                멋사 자기소개 지원서 </button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter3"
+                style="padding-left:2.2em; padding-right:2.2em">
+                IT 서비스 소개 </button>
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">사자의 개인정보</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <b>박태호</b><br>
+                    경희대학교 전자공학과 학부 3학년<br>
+                    멋쟁이 사자처럼 7기<br>
+                    잘 부탁드립니다.<br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">멋사 자기소개 지원서</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-lbel="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" ; style="text-indent: 1em">
+                    제가 '프로그래밍'을 제일 처음 접한 시기는 2015년, 경희대학교 '프로그래밍기초' 수업을 수강했을 때였습니다.
+                    수업 언어는 C++였으며, 상당히 어려워했던 것으로 기억합니다.
+                    가장 기초적인 '파일 입출력'에서부터 거의 포기했으며, '전자공학과인 내가 왜 이것을 들어야 하는 것이지?'라는 생각뿐만 가졌던 것 같습니다.
+                    그렇게 '프로그래밍'에 전혀 관심을 가지지 않은 채로 1학년을 보냈으며, 입대하게 되었습니다.</style><br><br>
+
+                    <div style="text-indent:1em">시간이 지나고 2018년, 2학년 1학기 복학을 하며 '객체지향프로그래밍' 수업을 수강해야 했습니다.
+                        다행히도 이 수업은 예전 '프로그래밍기초' 수업을 첫 몇 주간 다시 복습을 하고, 새로 내용을 천천히 배우는 식으로 진행되었습니다.
+                        확실히 두 번째로 복습을 하니 이해가 훨씬 빨랐습니다.
+                        진지하게 공부에 매진하다 보니 프로그래밍 자체에 관심을 갖게 되었고, 수업도 누구보다 열심히 들었습니다.
+                        이 수업만큼은 하드웨어적인 원리/소프트웨어적 사유 하나하나 다 따졌던 것으로 기억합니다. </style><br> <br>
+
+                        <div style="text-indent:1em">관심을 가지게 되니 욕심이 생기게 되었습니다.
+                            '내가 구상하는 사이트를 내가 직접 만든다면?' 2학년 2학기에 웹 프로그래밍에 대해 알아보았습니다.
+                            찾다 보니 프런트엔드/백엔드 프로그래밍에 눈을 뜨게 되었고, 혼자 HTML/CSS/JavaScript/jQuery 등을 공부하기 시작했습니다.
+                            대충 감만 잡은 상태로 혼자 하려니 지치게 되었고, 결국 자연스레 전공 공부를 시작하며 손을 놓게 되었습니다.</div> <br> <br>
+
+                        <div style="text-indent:1em">그러던 중 '멋쟁이 사자처럼' 모집 공고를 보게 되었습니다.
+                            다시 제대로 배우고 도전하고 싶은 마음이 생겼습니다.
+                            동아리원이 직접 프로그래밍 교육을 진행해주며, 애초에 '프로그래밍'에 관심이 많은 사람들이 모여 같이 대회도 참가한 것이 인상 깊었습니다.
+                            위의 제 사례를 제시한 이유는 중요한 한 가지를 배웠기 때문입니다.
+                            새로운 것을 도전할 때는 누군가가 도와주거나, 같이 배워간다면 훨씬 포기할 확률도 적고 열정이 극대화된다는 것입니다.
+                            저에게 다시 열정을 지펴 준 '멋쟁이 사자처럼'에서 1년간 '멋지게' 배워보고 싶습니다.</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">IT 서비스 소개</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-lbel="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" ; style="text-indent: 1em">
+                    제가 만들고 싶은 아이템은 '대학생 전공 솔루션 지식인'입니다.
+                    아직 세부내용은 구체화하지 않았습니다.
+                    학과별 게시판을 따로 만들어, 포인트제를 도입해, 대학생들끼리 전공지식을 편리하게 공유할 수 있는 플랫폼을 만들 예정입니다.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

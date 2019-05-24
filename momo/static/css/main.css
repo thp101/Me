@@ -1,0 +1,12 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(117, 235, 127);
+}
+
+h1, h3{
+    color: rgb(21, 128, 21);
+}
